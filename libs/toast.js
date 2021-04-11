@@ -1,6 +1,5 @@
 module.exports = function(icon, text){    
-    if(!icon) return;
-    if(!text) return;
+    if(!icon || !text) return;
     
     let table = new Table(Tex.button);
     table.update(() => {
